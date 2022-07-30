@@ -1,0 +1,4 @@
+force_install_dir /opt/tf2classic/server
+login anonymous
+app_update 244310
+quit

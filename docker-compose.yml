@@ -1,0 +1,24 @@
+version: "3.3"
+services:
+  tf2c-server:
+    build: .
+    image: local/steam-tf2c
+    command: sh /opt/tf2classic/server/tf2classic/runserver.sh
+    container_name: tf2c
+    user: steam
+    restart: always
+    stdin_open: true
+    tty: true
+    ports:
+      - "27005:27005/tcp"
+      - "27005:27005/udp"
+      - "27015:27015/tcp"
+      - "27015:27015/udp"
+    logging:
+        driver: "json-file"
+        options:
+            max-file: "5"
+            max-size: "10m"
+# Volume for consistent database for sourcemod plugins. This needs "user: root" instead of "user: steam"
+#    volumes:
+#      - /your_path/tf2c_server_sqlite.sq3:/opt/tf2classic/server/tf2classic/addons/sourcemod/data/sqlite/server-sqlite.sq3

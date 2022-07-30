@@ -1,0 +1,1 @@
+./srcds_run -console -game tf2classic -autoupdate -steam_dir /opt/tf2classic/steamcmd/ -steamcmd_script /opt/tf2classic/tf2classic.txt +map plr_crossbone -ip 0.0.0.0 -strictportbind

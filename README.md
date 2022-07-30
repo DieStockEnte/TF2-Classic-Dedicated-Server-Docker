@@ -1,2 +1,5 @@
-# TF2-Classic-Dedicated-Server-Docker
-A Docker-compose for a TF2Classic Server based on Ubuntu 20.04
+put config here like
+* mapcycle.txt
+* motd.txt
+* motd_text.txt
+* server.cfg
