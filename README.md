@@ -1,3 +1,6 @@
+# OUTDATED
+Since TF2 Classic got new updates. This Docker compose might be outdated and not working.
+
 # TF2 Classic dedicated server with Docker compose
 With this docker compose you can create customizable dedicated servers for Team Fortress 2 Classic.
 This might only work on Linux operating systems and not on Windows.
